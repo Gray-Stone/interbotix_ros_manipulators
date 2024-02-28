@@ -208,6 +208,9 @@ def launch_setup(context, *args, **kwargs):
             planning_scene_monitor_parameters,
             joint_limits,
             sensor_parameters,
+            {
+                "publish_robot_description_semantic": True,
+            },
         ],
         remappings=remappings,
         output={'both': 'screen'},
